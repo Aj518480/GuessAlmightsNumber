@@ -4,9 +4,12 @@
     
     // Keep current score board
     //score will go up in a win when almighNumber === studentValue
-    // score will go up in losses when studentValue > almightNumber
     var wins = 0;
+
+    // score will go up in losses when studentValue > almightNumber
+    //reset displays once lose happens
     var losses = 0;
+
     //student value will change everytime the game starts
     //each student will have a different value from 1-9
     var studentOne;
@@ -14,48 +17,45 @@
     var studentThree;
     var studentFour;
 
-    //computer guess that will generate
-    var almightNumber;
-    //current value of added value of imgs
-    var gamerScore;
-    var computerValue
-    //not needed right now
-    // var guessSoFar = [];
-    // var guessLeft = 9;
-    // var userGuess;
+    //randomnumber will go into here
 
-    var computerGuess;
-     
-   
+    var almightNumber;
+
+    //Gamers added total
+    var gamerScore;
+
 
     //create a function to display the results to the pg//
     function updateDisplay() {
-        //user number they have to get to
+       
         document.querySelector("#almightNumber").innerHTML = almightNumber;
         document.querySelector("#wins").innerHTML = wins;
         document.querySelector("#losses").innerHTML = losses;
         document.querySelector("#gamerScore").innerHTML = gamerScore;
-        document.querySelector("#studentValues").innerHTML = studentValues;
-
-        //not needed just yet
-
-         //document.querySelector("#guessLeft").innerHTML = guessLeft;
-        //document.querySelector("#guessSoFar").innerHTML = guessSoFar;
-
     };
 
     updateDisplay();
 
-    //create a function to get a random letter from the computer// 
-    function computerRandomLetter() {
-        computerGuess = randomlySelectedNumber [Math.floor(Math.random() * randomlySelectedNumber.length)];
+    
+
+
+    //create a function to get a random number for almight// 
+    function randomNumber() {
+        almightNumber = randomlySelectedNumber [Math.floor(Math.random() * randomlySelectedNumber.length)];
     };
-    //function to reset my scores
+    
+    
+    //function to reset my gamer score
 
     function resetScores() {
-        guessLeft = 9;
-        guessSoFar = [];
+        gamerScore;
     }
+
+
+//Cleaned up code until here will continue back HERE!!!!
+
+
+
 
     computerRandomLetter()
 
