@@ -1,25 +1,39 @@
 
 
 
-    //create vars Wins, Losses, UserGuess,ComputerGuess, Computer choices//
+    
+    //score board
     var wins = 0;
     var losses = 0;
-    var guessSoFar = [];
-    var guessLeft = 9;
-    var userGuess;
-    var computerGuess;
-    var computerChoices = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']; //put all letters//  
+
+    //the choices of the numbers the computer can give to the images// 
+    var imgValues = ["1","2","3","4","5","6","7","8","9"]; 
+
+    //computer guess that will generate
     var randomlySelectedNumber = [];
+    //current value of added value of imgs
+    var currentValue=;
+
+    //not needed right now
+    // var guessSoFar = [];
+    // var guessLeft = 9;
+    // var userGuess;
+    // var computerGuess;
+     
+   
 
     //create a function to display the results to the pg//
     function updateDisplay() {
-
+        //user number they have to get to
         document.querySelector("#randomlySelectedNumber").innerHTML = randomlySelectedNumber;
         document.querySelector("#wins").innerHTML = wins;
         document.querySelector("#losses").innerHTML = losses;
 
-        document.querySelector("#guessLeft").innerHTML = guessLeft;
-        document.querySelector("#guessSoFar").innerHTML = guessSoFar;
+
+        //not needed just yet
+        
+         //document.querySelector("#guessLeft").innerHTML = guessLeft;
+        //document.querySelector("#guessSoFar").innerHTML = guessSoFar;
 
     };
 
