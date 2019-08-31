@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Anton|Fjalla+One|Permanent+Marker&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="/unit-4-game/unit-4-game/assets/CSS/Style.css">
+    <title>Almight's Number</title>
+</head>
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="/unit-4-game/unit-4-game/assets/JavaScript/Game.js"></script>
+
+    <container>
+        <div class="row">
+            <div class="col-6">
+
+                <!--Taking some  of the Psychic Game and editing the code to make the NewCrystalGame-->
+                <!--Making a heading of the game for the html-->
+                <h4>Match Almight's Number Game!</h4>
+                <img src="https://cdn.shopify.com/s/files/1/0014/2648/9388/products/figpin-enamel-pins-my-hero-academia-all-might-enamel-pin-5239360880684_2000x2000.png?v=1564995284"width="300px"height="300px">
+
+            </div>
+            <div class="col-6">
+                <!--Make instructions of the game in a container with a paragraph tags-->
+                <!--Make Css to style and edit heading of game and background-->
+                <p>
+                    <h4>Instructions to play:</h4>
+                    <br>
+                    You will be given a random number at the start of the game.
+                    <br>
+                    There are four crystals below.By clicking on a crystal you will add a specific amount of points to
+                    your
+                    total score.
+                    <br>
+                    You win the game by matching your total score to random number,you lose the game if your total score
+                    goes above the random number.
+                    <br>
+                    The value of each crystal is hidden from you until you click on it.
+                    <br>
+                    Each time when the game starts, the game will change the values of each crystal.
+                </p>
+                <hr>
+            </div>
+        </div>
+    </container>
+
+
+    <container>
+        <div class="row">
+            <div class="col-6">
+                <!--Making an area where the randomly selected number will be held and to be linked to JS file-->
+                <h4 id="randomlySelectedNumber">Almight's Number: </h4>
+                <!--4 friends images with random values-->
+                <img id="friendOne" src="https://static.tvtropes.org/pmwiki/pub/images/uraraka.png"width="50"height="150">
+                <img id="friendTwo" src= "https://vignette.wikia.nocookie.net/characterprofile/images/e/e1/Izuku_Midoriya%2C_the_Successor_to_All_Might.png/revision/latest?cb=20170801171151"width="80" height="160">
+                <img id="friendThree"src= "https://i.pinimg.com/originals/78/13/4c/78134cd2783c7775bdd65f7d68fce288.png"width="80"height="150">
+                <img id="friendFour" src= "https://vignette.wikia.nocookie.net/bokunoheroacademia/images/3/3a/Eijiro_Kirishima_Student_Uniform_Profile.png/revision/latest/scale-to-width-down/167?cb=20190129175755" width="50"height="150">
+
+            </div>
+
+            <div class="col-6">
+                <!-- Selector and Wins and Losses on the same line -->
+                <p>Wins:<span id="wins"> </span> </p>
+                <p>Losses: <span id="losses"></span></p>
+            </div>
+
+
+        </div>
+    
+    </container>
+
+    <container>
+        <div class="row">
+            <div class="col">
+                    <hr>
+                    <!-- four images should be in this section-->
+                    <!--make images clickable with a different value and random number to generate everytime the game is started-->
+                    <h4 id="usersCurrentValue">Your Number:</h4>
+            </div>
+
+        </div>
+
+    </container>
+    <div class="row">
+
+        <div class="col-6">
+           <img>
+           <img>
+           <img>
+           <img>
+         
+        </div>
+        <div class="row">
+           
+         
+            
+
+        </div>
+            
+
+        </div>
+    </div>
+
+
+
+    <!--<p>Guesses Left:<span id="guessLeft"></span></p>
+    <p>Guesses So Far:<span id="guessSoFar"></span></p>-->
+
+
+
+
+
+
+</body>
+
+</html>
