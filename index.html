@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -16,43 +17,48 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+        
         <link href="https://fonts.googleapis.com/css?family=Anton|Fjalla+One|Permanent+Marker&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="/unit-4-game/unit-4-game/assets/CSS/Style.css">
+        
+        <link rel="stylesheet" type="text/css" href="Style.css">
     <title>Almight's Number</title>
 </head>
 
 <body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="/unit-4-game/unit-4-game/assets/JavaScript/Game.js"></script>
-
+    <script src="/unit-4-game/assets/JavaScript/Game.js"></script>
     <container>
         <div class="row">
             <div class="col-6">
-
+                <container>
+                <h1 class="heading">Match Almight's Number Game!</h1>
                 <!--Taking some  of the Psychic Game and editing the code to make the NewCrystalGame-->
                 <!--Making a heading of the game for the html-->
-                <h4>Match Almight's Number Game!</h4>
-                <img src="https://cdn.shopify.com/s/files/1/0014/2648/9388/products/figpin-enamel-pins-my-hero-academia-all-might-enamel-pin-5239360880684_2000x2000.png?v=1564995284"width="300px"height="300px">
+                </container>
+                <img src="https://cdn.shopify.com/s/files/1/0014/2648/9388/products/figpin-enamel-pins-my-hero-academia-all-might-enamel-pin-5239360880684_2000x2000.png?v=1564995284"width="300px"height="280
+                px">
 
             </div>
             <div class="col-6">
                 <!--Make instructions of the game in a container with a paragraph tags-->
                 <!--Make Css to style and edit heading of game and background-->
+                <h4 class="instructions">Instructions to play:</h4>
+                <br>
                 <p>
-                    <h4>Instructions to play:</h4>
-                    <br>
-                    You will be given a random number at the start of the game.
-                    <br>
-                    There are four crystals below.By clicking on a crystal you will add a specific amount of points to
-                    your
-                    total score.
-                    <br>
-                    You win the game by matching your total score to random number,you lose the game if your total score
-                    goes above the random number.
-                    <br>
-                    The value of each crystal is hidden from you until you click on it.
-                    <br>
-                    Each time when the game starts, the game will change the values of each crystal.
+                    Almight will think of a random number at the start of the game.
+                </p>
+                <p>
+                    There are four of Almight's students below.By clicking on each student you will add a specific amount of points to
+                    your total score.
+                </p>
+                <p>
+                    You win the game by matching your total score to Almight's number,you lose the game if your total score
+                    goes above the Almight's number.
+                </p>
+                <p>
+                    The value of each student is hidden from you until you click on them.
+                </p>
+                <p>
+                    Each time when the game starts, the game will change the values of each student.
                 </p>
                 <hr>
             </div>
@@ -75,8 +81,8 @@
 
             <div class="col-6">
                 <!-- Selector and Wins and Losses on the same line -->
-                <p>Wins:<span id="wins"> </span> </p>
-                <p>Losses: <span id="losses"></span></p>
+                <p class="win">Wins:<span id="wins"> </span> </p>
+                <p class="lose">Losses: <span id="losses"></span></p>
             </div>
 
 

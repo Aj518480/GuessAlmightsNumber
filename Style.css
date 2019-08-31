@@ -1,0 +1,42 @@
+body{
+    background-image: url("http://getwallpapers.com/wallpaper/full/8/4/8/798085-boku-no-hero-wallpapers-1920x1080-hd.jpg");
+    width: 980px;
+    margin: 50px;
+}
+
+
+
+.heading{
+    font-family: 'Anton', sans-serif;
+    color:white;
+    
+}
+
+.instructions{
+    font-family: 'Anton', sans-serif;
+    color:white;
+}
+#randomlySelectedNumber{
+    font-family: 'Anton', sans-serif;
+    color:white;
+}
+
+#usersCurrentValue{
+    font-family: 'Anton', sans-serif;
+    color:white;
+}
+.win{
+    font-family: 'Anton', sans-serif;
+    color:white;
+}
+.lose{
+    font-family: 'Anton', sans-serif;
+    color:white;
+}
+p{
+    font-family: 'Fjalla One', sans-serif;
+    color:white;
+}
+/*font-family: 'Anton', sans-serif;
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Permanent Marker', cursive;
