@@ -3,18 +3,21 @@
 
     
     // Keep current score board
-    //score will go up in a win when usercurrentvalue === computerVaule
-    // score will go up in losses when usercurrentvalue !== computerValue
+    //score will go up in a win when almighNumber === studentValue
+    // score will go up in losses when studentValue > almightNumber
     var wins = 0;
     var losses = 0;
-
-    //the choices of the numbers the computer can give to the images// 
-    var imgValues = ["1","2","3","4","5","6","7","8","9"]; 
+    //student value will change everytime the game starts
+    //each student will have a different value from 1-9
+    var studentOne;
+    var studentTwo;
+    var studentThree;
+    var studentFour;
 
     //computer guess that will generate
-    var randomlySelectedNumber= "";
+    var almightNumber;
     //current value of added value of imgs
-    var usersCurrentValue="" ;
+    var gamerScore;
     var computerValue
     //not needed right now
     // var guessSoFar = [];
@@ -28,10 +31,11 @@
     //create a function to display the results to the pg//
     function updateDisplay() {
         //user number they have to get to
-        document.querySelector("#randomlySelectedNumber").innerHTML = randomlySelectedNumber;
+        document.querySelector("#almightNumber").innerHTML = almightNumber;
         document.querySelector("#wins").innerHTML = wins;
         document.querySelector("#losses").innerHTML = losses;
-
+        document.querySelector("#gamerScore").innerHTML = gamerScore;
+        document.querySelector("#studentValues").innerHTML = studentValues;
 
         //not needed just yet
 
