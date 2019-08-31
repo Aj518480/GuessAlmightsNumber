@@ -37,21 +37,20 @@
     updateDisplay();
 
     
-
-
-    //create a function to get a random number for almight// 
+    //create a function to get a random number for almight
+    //Might have to fix so it randomize a number
     function randomNumber() {
         almightNumber = randomlySelectedNumber [Math.floor(Math.random() * randomlySelectedNumber.length)];
     };
     
     
     //function to reset my gamer score
-
+    //happens after gamerscore > almight
     function resetScores() {
         gamerScore;
     }
 
-
+//learn to connect JS to Index.html
 //Cleaned up code until here will continue back HERE!!!!
 
 

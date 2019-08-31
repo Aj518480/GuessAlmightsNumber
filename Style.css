@@ -16,12 +16,12 @@ body{
     font-family: 'Anton', sans-serif;
     color:white;
 }
-#randomlySelectedNumber{
+.almightNumber{
     font-family: 'Anton', sans-serif;
     color:white;
 }
 
-#usersCurrentValue{
+.gamerScore{
     font-family: 'Anton', sans-serif;
     color:white;
 }
