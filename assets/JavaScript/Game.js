@@ -2,7 +2,9 @@
 
 
     
-    //score board
+    // Keep current score board
+    //score will go up in a win when usercurrentvalue === computerVaule
+    // score will go up in losses when usercurrentvalue !== computerValue
     var wins = 0;
     var losses = 0;
 
@@ -10,15 +12,16 @@
     var imgValues = ["1","2","3","4","5","6","7","8","9"]; 
 
     //computer guess that will generate
-    var randomlySelectedNumber = [];
+    var randomlySelectedNumber= "";
     //current value of added value of imgs
-    var currentValue=;
-
+    var usersCurrentValue="" ;
+    var computerValue
     //not needed right now
     // var guessSoFar = [];
     // var guessLeft = 9;
     // var userGuess;
-    // var computerGuess;
+
+    var computerGuess;
      
    
 
@@ -31,7 +34,7 @@
 
 
         //not needed just yet
-        
+
          //document.querySelector("#guessLeft").innerHTML = guessLeft;
         //document.querySelector("#guessSoFar").innerHTML = guessSoFar;
 
@@ -39,9 +42,9 @@
 
     updateDisplay();
 
-    //create a function to get a random letter from the computer// rock paper sic doc
+    //create a function to get a random letter from the computer// 
     function computerRandomLetter() {
-        computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+        computerGuess = randomlySelectedNumber [Math.floor(Math.random() * randomlySelectedNumber.length)];
     };
     //function to reset my scores
 
