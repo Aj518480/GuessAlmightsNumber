@@ -36,14 +36,18 @@
 
     updateDisplay();
 
+   
     
     //create a function to get a random number for almight
     //Might have to fix so it randomize a number
     function randomNumber() {
         almightNumber = randomlySelectedNumber [Math.floor(Math.random() * randomlySelectedNumber.length)];
     };
-    
-    
+    $( "friendOne" ).click(function() {
+        randomNumber();
+        
+
+   
     //function to reset my gamer score
     //happens after gamerscore > almight
     function resetScores() {
@@ -56,14 +60,14 @@
 
 
 
-    computerRandomLetter()
+randomNumber()
 
-    console.log(computerGuess)
+    console.log(almightNumber)
 
     //create a onkey up event function to grab UserGuess
     document.onkeyup = function (event) {
 
-        userGuess = event.key;
+        gamerScore = event.key;
 
         console.log(userGuess);
 
