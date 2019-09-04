@@ -13,7 +13,7 @@ $(document).ready(function() {
     var studentTwo;
     var studentThree;
     var studentFour;
-    //randomnumber will go into here
+   
     var almightNumber;
     //Gamers added total
     var gamerScore;
@@ -80,11 +80,10 @@ $(document).ready(function() {
     $("#wins").text(wins);
     startGame();
     updateDisplay();
-    startGame();
     //win will go up 1//
     //almight will think of another number
     //wins will go on screen
-  }
+  };
 
   if (gamerScore > almightNumber) {
     losses++;
@@ -93,7 +92,7 @@ $(document).ready(function() {
     //guesses should be 1 less than it was
     //user guess should show in guesses so far span
 
-  }
+  };
 
 
 
