@@ -32,6 +32,8 @@ $(document).ready(function() {
     updateDisplay();
     
     //create a function to get a random number for almight
+    //create a function for the seperate images to generate a random number
+    //helped plug in into the html using jquery
     
    function startGame(){
        gamerScore=0;
@@ -49,28 +51,52 @@ $(document).ready(function() {
   startGame();
 
   $("#friendOne").on("click",function(){
-    gamerScore += studentOne;
+    gamerScore= studentOne + gamerScore;
     $("#friendOne").text(gamerScore);
     updateDisplay();
   });
 
   $("#friendTwo").on("click",function(){
-    gamerScore += studentTwo;
+    gamerScore = studentTwo + gamerScore;
     $("#friendTwo").text(gamerScore);
     updateDisplay();
   });
 
   $("#friendThree").on("click",function(){
-    gamerScore += studentThree;
+    gamerScore = studentThree + gamerScore;
     $("#friendThree").text(gamerScore);
     updateDisplay();
   });
 
   $("#friendFour").on("click",function(){
-    gamerScore += studentFour;
+    gamerScore = studentFour + gamerScore;
     $("#friendFour").text(gamerScore);
     updateDisplay();
   });
+
+
+  if (gamerScore === almightNumber) {
+    wins++;
+    $("#wins").text(wins);
+    startGame();
+    updateDisplay();
+    startGame();
+    //win will go up 1//
+    //almight will think of another number
+    //wins will go on screen
+  }
+
+  if (gamerScore > almightNumber) {
+    losses++;
+    $("#losses").text(losses);
+    updateDisplay();
+    //guesses should be 1 less than it was
+    //user guess should show in guesses so far span
+
+  }
+
+
+
 
 
 
