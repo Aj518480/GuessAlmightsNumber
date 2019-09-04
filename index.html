@@ -5,9 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
+
+    <link href="https://fonts.googleapis.com/css?family=Anton|Fjalla+One|Permanent+Marker&display=swap" rel="stylesheet">
+        
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="Style.css">
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -17,15 +22,14 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-        
-        <link href="https://fonts.googleapis.com/css?family=Anton|Fjalla+One|Permanent+Marker&display=swap" rel="stylesheet">
-        
-        <link rel="stylesheet" type="text/css" href="Style.css">
+
+        <script src="Game.js"></script>   
+       
     <title>Almight's Number</title>
 </head>
 
 <body>
-    <script src="/unit-4-game/Game.js"></script>
+    
     <container>
         <div class="row">
             <div class="col-6">
@@ -72,10 +76,10 @@
                 <!--Making an area where the randomly selected number will be held and to be linked to JS file-->
                 <h4 class= "almightNumber">Almight's Number:<span id="almightNumber">   </span></h4>
                 <!--4 friends images with random values-->
-                <img id="friendOne" src="https://static.tvtropes.org/pmwiki/pub/images/uraraka.png"width="50"height="150">
-                <img id="friendTwo" src= "https://vignette.wikia.nocookie.net/characterprofile/images/e/e1/Izuku_Midoriya%2C_the_Successor_to_All_Might.png/revision/latest?cb=20170801171151"width="80" height="160">
-                <img id="friendThree"src= "https://i.pinimg.com/originals/78/13/4c/78134cd2783c7775bdd65f7d68fce288.png"width="80"height="150">
-                <img id="friendFour" src= "https://vignette.wikia.nocookie.net/bokunoheroacademia/images/3/3a/Eijiro_Kirishima_Student_Uniform_Profile.png/revision/latest/scale-to-width-down/167?cb=20190129175755" width="50"height="150">
+                <img class=students id="friendOne" src="https://static.tvtropes.org/pmwiki/pub/images/uraraka.png"width="50"height="150"alt="ochanco">
+                <img class=students id="friendTwo" src= "https://vignette.wikia.nocookie.net/characterprofile/images/e/e1/Izuku_Midoriya%2C_the_Successor_to_All_Might.png/revision/latest?cb=20170801171151"width="80" height="160"alt="deku">
+                <img class=students id="friendThree"src= "https://i.pinimg.com/originals/78/13/4c/78134cd2783c7775bdd65f7d68fce288.png"width="80"height="150"alt="katsuki">
+                <img class=students id="friendFour" src= "https://vignette.wikia.nocookie.net/bokunoheroacademia/images/3/3a/Eijiro_Kirishima_Student_Uniform_Profile.png/revision/latest/scale-to-width-down/167?cb=20190129175755" width="50"height="150" alt="red-riot">
 
             </div>
 
@@ -103,7 +107,7 @@
 
     </container>
     
-
+    
 </body>
 
 </html>
