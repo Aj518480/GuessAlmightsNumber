@@ -50,31 +50,38 @@ $(document).ready(function() {
    } 
   startGame();
 
+
+
+
   $("#friendOne").on("click",function(){
     gamerScore= studentOne + gamerScore;
     $("#friendOne").text(gamerScore);
+    gameLogic();
     updateDisplay();
   });
 
   $("#friendTwo").on("click",function(){
     gamerScore = studentTwo + gamerScore;
     $("#friendTwo").text(gamerScore);
+    gameLogic();
     updateDisplay();
   });
 
   $("#friendThree").on("click",function(){
     gamerScore = studentThree + gamerScore;
     $("#friendThree").text(gamerScore);
+    gameLogic();
     updateDisplay();
   });
 
   $("#friendFour").on("click",function(){
     gamerScore = studentFour + gamerScore;
     $("#friendFour").text(gamerScore);
+    gameLogic();
     updateDisplay();
   });
 
-
+function gameLogic(){
   if (gamerScore === almightNumber) {
     wins++;
     $("#wins").text(wins);
@@ -89,13 +96,14 @@ $(document).ready(function() {
     losses++;
     $("#losses").text(losses);
     updateDisplay();
+    startGame();
     //guesses should be 1 less than it was
     //user guess should show in guesses so far span
 
   };
 
-
-
+};
+gameLogic();
 
 
 
