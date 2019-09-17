@@ -1,7 +1,10 @@
 body{
-    background-image: url("http://getwallpapers.com/wallpaper/full/8/4/8/798085-boku-no-hero-wallpapers-1920x1080-hd.jpg");
+    background-image: url("./assets/Images/Almight\ and\ Deku\ Wallpaper.jpg");
     width: 980px;
     margin: 50px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 
@@ -37,6 +40,24 @@ p{
     font-family: 'Fjalla One', sans-serif;
     color:white;
 }
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+      height:100%;
+    
+    }
+}
+@media only screen and (max-width: 900px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+      height:100%;
+    
+    }
+}
+
 /*font-family: 'Anton', sans-serif;
 font-family: 'Fjalla One', sans-serif;
 font-family: 'Permanent Marker', cursive;

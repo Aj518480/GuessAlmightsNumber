@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link href="https://fonts.googleapis.com/css?family=Anton|Fjalla+One|Permanent+Marker&display=swap" rel="stylesheet">
-        
+    <link href="https://fonts.googleapis.com/css?family=Anton|Fjalla+One|Permanent+Marker&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <link rel="stylesheet" type="text/css" href="Style.css">
 
@@ -23,91 +24,99 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-        <script src="Game.js"></script>   
-       
+
+    <script src="./assets/JavaScript/Game.js"></script>
+
     <title>Almight's Number</title>
 </head>
 
 <body>
-    
-    <container>
-        <div class="row">
-            <div class="col-6">
-                <container>
-                <h1 class="heading">Match Almight's Number Game!</h1>
-                <!--Taking some  of the Psychic Game and editing the code to make the NewCrystalGame-->
-                <!--Making a heading of the game for the html-->
-                </container>
-                <img src="https://cdn.shopify.com/s/files/1/0014/2648/9388/products/figpin-enamel-pins-my-hero-academia-all-might-enamel-pin-5239360880684_2000x2000.png?v=1564995284"width="300px"height="280
+    <div class="wrapper">
+        <container>
+            <div class="row">
+                <div class="col-6">
+                    <container>
+                        <h1 class="heading">Match Almight's Number Game!</h1>
+                        <!--Taking some  of the Psychic Game and editing the code to make the NewCrystalGame-->
+                        <!--Making a heading of the game for the html-->
+                    </container>
+                    <img src="./assets/Images/Almight.png" width="300px" height="280
                 px">
 
+                </div>
+                <div class="col-6">
+                    <!--Make instructions of the game in a container with a paragraph tags-->
+                    <!--Make Css to style and edit heading of game and background-->
+                    <h4 class="instructions">Instructions to play:</h4>
+                    <br>
+                    <p>
+                        Almight will think of a random number at the start of the game.
+                    </p>
+                    <p>
+                        There are four of Almight's students below.By clicking on each student you will add a specific
+                        amount of points to
+                        your total score.
+                    </p>
+                    <p>
+                        You win the game by matching your total score to Almight's number,you lose the game if your
+                        total score
+                        goes above the Almight's number.
+                    </p>
+                    <p>
+                        The value of each student is hidden from you until you click on them.
+                    </p>
+                    <p>
+                        Each time when the game starts, the game will change the values of each student.
+                    </p>
+                    <hr>
+                </div>
             </div>
-            <div class="col-6">
-                <!--Make instructions of the game in a container with a paragraph tags-->
-                <!--Make Css to style and edit heading of game and background-->
-                <h4 class="instructions">Instructions to play:</h4>
-                <br>
-                <p>
-                    Almight will think of a random number at the start of the game.
-                </p>
-                <p>
-                    There are four of Almight's students below.By clicking on each student you will add a specific amount of points to
-                    your total score.
-                </p>
-                <p>
-                    You win the game by matching your total score to Almight's number,you lose the game if your total score
-                    goes above the Almight's number.
-                </p>
-                <p>
-                    The value of each student is hidden from you until you click on them.
-                </p>
-                <p>
-                    Each time when the game starts, the game will change the values of each student.
-                </p>
-                <hr>
-            </div>
-        </div>
-    </container>
+        </container>
 
 
-    <container>
-        <div class="row">
-            <div class="col-6">
-                <!--Making an area where the randomly selected number will be held and to be linked to JS file-->
-                <h4 class= "almightNumber">Almight's Number:<span id="almightNumber">   </span></h4>
-                <!--4 friends images with random values-->
-                <img class=students id="friendOne" src="https://static.tvtropes.org/pmwiki/pub/images/uraraka.png"width="50"height="150"alt="ochanco">
-                <img class=students id="friendTwo" src= "https://vignette.wikia.nocookie.net/characterprofile/images/e/e1/Izuku_Midoriya%2C_the_Successor_to_All_Might.png/revision/latest?cb=20170801171151"width="80" height="160"alt="deku">
-                <img class=students id="friendThree"src= "https://i.pinimg.com/originals/78/13/4c/78134cd2783c7775bdd65f7d68fce288.png"width="80"height="150"alt="katsuki">
-                <img class=students id="friendFour" src= "https://vignette.wikia.nocookie.net/bokunoheroacademia/images/3/3a/Eijiro_Kirishima_Student_Uniform_Profile.png/revision/latest/scale-to-width-down/167?cb=20190129175755" width="50"height="150" alt="red-riot">
+        <container>
+            <div class="row">
+                <div class="col-6">
+                    <!--Making an area where the randomly selected number will be held and to be linked to JS file-->
+                    <h4 class="almightNumber">Almight's Number:<span id="almightNumber"> </span></h4>
+                    <!--4 friends images with random values-->
+                    <img class=students id="friendOne" src="./assets/Images/uraraka.png" width="50" height="150"
+                        alt="ochanco">
+                    <img class=students id="friendTwo" src="./assets/Images/deku.png" width="80" height="160"
+                        alt="deku">
+                    <img class=students id="friendThree" src="./assets/Images/katsuki.png" width="80" height="150"
+                        alt="katsuki">
+                    <img class=students id="friendFour"
+                        src="./assets/Images/Eijiro_Kirishima_Student_Uniform_Profile.png" width="50" height="150"
+                        alt="red-riot">
+
+                </div>
+
+                <div class="col-6">
+                    <!-- Selector and Wins and Losses on the same line -->
+                    <p class="win">Wins:<span id="wins"> </span> </p>
+                    <p class="lose">Losses: <span id="losses"></span></p>
+                </div>
+
 
             </div>
 
-            <div class="col-6">
-                <!-- Selector and Wins and Losses on the same line -->
-                <p class="win">Wins:<span id="wins"> </span> </p>
-                <p class="lose">Losses: <span id="losses"></span></p>
-            </div>
+        </container>
 
-
-        </div>
-    
-    </container>
-
-    <container>
-        <div class="row">
-            <div class="col">
+        <container>
+            <div class="row">
+                <div class="col">
                     <hr>
                     <!-- four images should be in this section-->
                     <!--make images clickable with a different value and random number to generate everytime the game is started-->
-                    <h4 class="gamerScore">Your Number:<span id ="gamerScore"> </span></h4>
+                    <h4 class="gamerScore">Your Number:<span id="gamerScore"> </span></h4>
+                </div>
+
             </div>
 
-        </div>
+        </container>
 
-    </container>
-    
-    
+    </div>
 </body>
 
 </html>
