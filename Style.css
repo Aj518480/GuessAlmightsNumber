@@ -49,14 +49,7 @@ p{
     
     }
 }
-@media only screen and (max-width: 900px) {
-    /* For mobile phones: */
-    [class*="col-"] {
-      width: 100%;
-      height:100%;
-    
-    }
-}
+
 
 /*font-family: 'Anton', sans-serif;
 font-family: 'Fjalla One', sans-serif;
